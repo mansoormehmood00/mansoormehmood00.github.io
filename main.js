@@ -2,8 +2,7 @@
 (function () {
   'use strict';
 
-  var root = document.documentElement;
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
 
@@ -37,21 +36,6 @@
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(EMAIL).then(done, function () { fallbackCopy(); done(); });
       } else { fallbackCopy(); done(); }
-    });
-  }
-
-  /* ---------- Theme toggle (light by default) ---------- */
-  var themeBtn = $('.theme-toggle');
-  function labelTheme() {
-    if (themeBtn) themeBtn.setAttribute('aria-label', root.getAttribute('data-theme') === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-  }
-  if (themeBtn) {
-    labelTheme();
-    themeBtn.addEventListener('click', function () {
-      var t = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', t);
-      try { localStorage.setItem('mm-theme-v2', t); } catch (e) {}
-      labelTheme();
     });
   }
 

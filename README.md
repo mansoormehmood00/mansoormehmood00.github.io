@@ -38,15 +38,15 @@ I currently lead the business development team at **Prime Medical Billing LLC**:
 A hand-built, dependency-free static site hosted on GitHub Pages.
 
 - Semantic HTML, custom CSS and vanilla JavaScript, with no frameworks and no build step
-- A light theme by default, with an optional dark theme
+- A refined dark theme with restrained champagne accents
 - Responsive from 320px phones to wide desktops, and honours `prefers-reduced-motion`
-- Self-hosted typefaces: [Source Serif 4](https://github.com/adobe-fonts/source-serif) and [Inter](https://github.com/rsms/inter), both under the SIL Open Font License
+- Self-hosted typefaces: [Cormorant Garamond](https://github.com/CatharsisFonts/Cormorant) and [Inter](https://github.com/rsms/inter), both under the SIL Open Font License
 - SEO-ready, with Open Graph and Twitter cards, JSON-LD `Person` schema, a sitemap and `robots.txt`
 
 ```
 index.html        → page markup and content
 style.css         → design system and layout
-main.js           → interactions (theme, reveal, tabs, accordion, counters)
+main.js           → interactions (navigation, reveal, tabs, accordion, counters)
 favicon.svg       → monogram favicon
 mansoor-mehmood.jpg → portrait
 og-image.jpg      → social share card

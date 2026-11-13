@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -7,7 +7,7 @@
   <meta name="description" content="Mansoor Mehmood — Senior Manager, Business Development, HR & Administration with 9+ years in sales, people management and operations, including 4+ years in US healthcare revenue cycle management (RCM).">
   <meta name="author" content="Mansoor Mehmood">
   <link rel="canonical" href="https://mansoormehmood00.github.io/">
-  <meta name="theme-color" content="#f8f7f3">
+  <meta name="theme-color" content="#0a0e16">
 
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Mansoor Mehmood">
@@ -26,20 +26,12 @@
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preload" href="font-source-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="font-cormorant.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="font-inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="mansoor-mehmood.jpg" as="image">
   <link rel="stylesheet" href="style.css">
 
-  <script>
-    (function () {
-      var d = document.documentElement;
-      d.classList.add('js');
-      var t = null;
-      try { t = localStorage.getItem('mm-theme-v2'); } catch (e) {}
-      d.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
-    })();
-  </script>
+  <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
   {
@@ -64,8 +56,8 @@
   <header class="nav" id="top">
     <div class="container nav-inner">
       <a href="#top" class="brand" aria-label="Mansoor Mehmood — home">
+        <span class="brand-mark" aria-hidden="true">MM</span>
         <span class="brand-name">Mansoor Mehmood</span>
-        <span class="brand-role">Business Development &amp; HR</span>
       </a>
 
       <nav class="nav-links" aria-label="Primary">
@@ -78,12 +70,8 @@
       </nav>
 
       <div class="nav-actions">
-        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark theme">
-          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
-          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>
-        </button>
         <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get in touch</a>
-        <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span>
         </button>
       </div>
@@ -92,13 +80,13 @@
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <nav aria-label="Mobile">
-      <a href="#about">Profile</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#method">Approach</a>
-      <a href="#focus">Focus</a>
-      <a href="#experience">Experience</a>
-      <a href="#credentials">Credentials</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">Profile<span>01</span></a>
+      <a href="#expertise">Expertise<span>02</span></a>
+      <a href="#method">Approach<span>03</span></a>
+      <a href="#focus">Focus<span>04</span></a>
+      <a href="#experience">Experience<span>05</span></a>
+      <a href="#credentials">Credentials<span>06</span></a>
+      <a href="#contact">Contact<span>07</span></a>
     </nav>
     <div class="mobile-menu-foot">
       <a class="btn btn-primary" href="#contact">Get in touch</a>
@@ -109,100 +97,70 @@
   <main id="main">
 
     <!-- ============ HERO ============ -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="label rule">Business Development · HR &amp; Administration · US Healthcare RCM</p>
-
-          <h1 class="hero-title" id="hero-title">
-            Turning conversations into <span class="hl">contracts</span>, and hires into <span class="hl">high performers</span>.
-          </h1>
-
-          <p class="hero-lede">
-            I’m <strong>Mansoor Mehmood</strong>, a business development and HR leader with
-            <strong>9+ years</strong> in sales, people management and operations, including
-            <strong>4+ years in US healthcare revenue cycle management</strong>. I win new practices,
-            build the teams that serve them, and keep the department running.
-          </p>
-
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">
-              Get in touch
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-            </a>
-            <a href="Mansoor-Mehmood-Resume.pdf" class="btn btn-outline" download>
-              Download résumé
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5v8M4.5 7 8 10.5 11.5 7M3 13.5h10"/></svg>
-            </a>
-          </div>
-
-          <div class="hero-meta">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Islamabad, Pakistan</span>
-            <a href="https://www.linkedin.com/in/mansoormehmood" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.77 2.55 4.77 5.86v5.59h-4v-4.96c0-1.18-.02-2.7-1.7-2.7-1.7 0-1.96 1.28-1.96 2.61v5.05h-4v-11Z"/></svg>LinkedIn</a>
-            <a class="js-mail" href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Email</a>
-          </div>
-        </div>
-
-        <div class="portrait-wrap">
-          <figure class="portrait">
-            <img src="mansoor-mehmood.jpg" width="960" height="1200" alt="Portrait of Mansoor Mehmood in a grey double-breasted suit">
-          </figure>
-          <div class="portrait-card">
-            <b>Senior Manager</b>
-            <span>Prime Medical Billing LLC</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ STATS ============ -->
-    <section class="stats-band" aria-label="Career highlights">
+    <section class="hero" aria-labelledby="hero-name">
       <div class="container">
-        <div class="stats" role="list">
-          <div class="stat" role="listitem">
-            <div class="stat-num"><span data-count="9">9</span><sup>+</sup></div>
-            <p>Years across sales, people &amp; operations</p>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="label rule">Business Development · HR &amp; Administration · US Healthcare RCM</p>
+            <h1 class="hero-name" id="hero-name">Mansoor Mehmood</h1>
+            <p class="hero-tagline">Turning conversations into contracts, and hires into high performers.</p>
+            <p class="hero-lede">
+              A business development and HR leader with <strong>9+ years</strong> in sales, people management
+              and operations, including <strong>4+ years in US healthcare revenue cycle management</strong>.
+              I win new practices, build the teams that serve them, and keep the department running.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#contact" class="btn btn-primary">
+                Get in touch
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8h11M9.5 4l4 4-4 4"/></svg>
+              </a>
+              <a href="Mansoor-Mehmood-Resume.pdf" class="btn btn-outline" download>Download résumé</a>
+            </div>
+
+            <div class="hero-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Islamabad, Pakistan</span>
+              <a href="https://www.linkedin.com/in/mansoormehmood" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.77 2.55 4.77 5.86v5.59h-4v-4.96c0-1.18-.02-2.7-1.7-2.7-1.7 0-1.96 1.28-1.96 2.61v5.05h-4v-11Z"/></svg>LinkedIn</a>
+              <a class="js-mail" href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Email</a>
+            </div>
           </div>
-          <div class="stat" role="listitem">
-            <div class="stat-num"><span data-count="4">4</span><sup>+</sup></div>
-            <p>Years in US healthcare RCM</p>
+
+          <div class="portrait-wrap">
+            <div class="portrait-frame">
+              <figure class="portrait">
+                <img src="mansoor-mehmood.jpg" width="800" height="1000" alt="Portrait of Mansoor Mehmood">
+              </figure>
+            </div>
           </div>
-          <div class="stat" role="listitem">
-            <div class="stat-num"><span data-count="20">20</span><sup>+</sup></div>
-            <p>Businesses helped to find &amp; win customers</p>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="stat-num"><span data-count="25">25</span><sup>%</sup></div>
-            <p>Defect reduction on a quality-control project</p>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="stat-num"><span data-count="20">20</span><sup>%</sup></div>
-            <p>Team productivity lift through training &amp; reviews</p>
-          </div>
+        </div>
+
+        <div class="stats" role="list" aria-label="Career highlights">
+          <div class="stat" role="listitem"><div class="stat-num"><span data-count="9">9</span><sup>+</sup></div><p>Years across sales, people &amp; operations</p></div>
+          <div class="stat" role="listitem"><div class="stat-num"><span data-count="4">4</span><sup>+</sup></div><p>Years in US healthcare RCM</p></div>
+          <div class="stat" role="listitem"><div class="stat-num"><span data-count="20">20</span><sup>+</sup></div><p>Businesses helped to find &amp; win customers</p></div>
+          <div class="stat" role="listitem"><div class="stat-num"><span data-count="25">25</span><sup>%</sup></div><p>Defect reduction on a quality-control project</p></div>
+          <div class="stat" role="listitem"><div class="stat-num"><span data-count="20">20</span><sup>%</sup></div><p>Team productivity lift through training &amp; reviews</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
+    <!-- ============ PROFILE ============ -->
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="container about-grid">
         <div data-reveal>
           <p class="label rule">Profile</p>
-          <h2 class="section-title" id="about-title">Sales, people and operations under one roof.</h2>
+          <h2 class="section-title" id="about-title">Sales, people and operations under one roof</h2>
         </div>
-
         <div>
           <p class="about-statement" data-reveal>
             I lead the business development team at Prime Medical Billing LLC, winning new US practices
             for medical billing, insurance credentialing and virtual assistant services, while running
             recruitment, onboarding, appraisals and the day-to-day administration of the department.
           </p>
-
           <div class="about-body" data-reveal>
             <p>I sell to US physicians, psychiatrists, nurse practitioners and group practices, and I own the full cycle in HubSpot CRM, from the first prospecting call to a signed contract and a clean handover to operations.</p>
             <p>Earlier roles in finance and quality control gave me a solid base in reporting, audits, KPI tracking and staff training, the discipline I now bring to building and managing teams.</p>
           </div>
-
           <dl class="facts" data-reveal>
             <div class="fact"><dt>Current role</dt><dd>Senior Manager, BD, HR &amp; Admin</dd></div>
             <div class="fact"><dt>Industry</dt><dd>US Healthcare RCM</dd></div>
@@ -224,50 +182,36 @@
           <p class="section-intro" data-reveal>Five disciplines that work together: winning clients, building the team that serves them, understanding the healthcare business behind every deal, leading people well, and getting the word out.</p>
         </div>
 
-        <div class="grid-cards">
-          <article class="card" data-reveal>
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+        <div class="grid-cards" data-reveal>
+          <article class="card">
+            <div class="card-top"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><span class="card-index">i.</span></div>
             <h3>Business Development &amp; Sales</h3>
             <p>Outbound prospecting, discovery and consultative selling, through proposals, pricing and contract negotiation to long-term accounts.</p>
-            <div class="chips">
-              <span class="chip">B2B Sales</span><span class="chip">Lead Generation</span><span class="chip">Discovery Calls</span><span class="chip">Consultative Selling</span><span class="chip">Pipeline Management</span><span class="chip">Proposal Writing</span><span class="chip">Pricing &amp; Negotiation</span><span class="chip">Account Management</span><span class="chip">Client Retention</span><span class="chip">Market Research</span>
-            </div>
+            <div class="chips"><span class="chip">B2B Sales</span><span class="chip">Lead Generation</span><span class="chip">Discovery Calls</span><span class="chip">Consultative Selling</span><span class="chip">Pipeline Management</span><span class="chip">Proposal Writing</span><span class="chip">Pricing &amp; Negotiation</span><span class="chip">Account Management</span><span class="chip">Client Retention</span><span class="chip">Market Research</span></div>
           </article>
-
-          <article class="card" data-reveal style="--delay:.06s">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17.5" cy="9" r="2.4"/><path d="M16.5 14.2c2.6.2 4.5 2 4.5 4.6"/></svg></div>
+          <article class="card">
+            <div class="card-top"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17.5" cy="9" r="2.4"/><path d="M16.5 14.2c2.6.2 4.5 2 4.5 4.6"/></svg></span><span class="card-index">ii.</span></div>
             <h3>HR &amp; Administration</h3>
             <p>End-to-end hiring, onboarding and appraisals, plus the records, vendors, procurement and policies that keep a department running.</p>
-            <div class="chips">
-              <span class="chip">Recruitment &amp; Selection</span><span class="chip">Interviewing</span><span class="chip">Onboarding &amp; Training</span><span class="chip">Performance Appraisals</span><span class="chip">KPI Setting</span><span class="chip">Attendance &amp; Leave</span><span class="chip">Employee Relations</span><span class="chip">HR Policy Compliance</span><span class="chip">Vendor Coordination</span><span class="chip">Procurement &amp; Inventory</span>
-            </div>
+            <div class="chips"><span class="chip">Recruitment &amp; Selection</span><span class="chip">Interviewing</span><span class="chip">Onboarding &amp; Training</span><span class="chip">Performance Appraisals</span><span class="chip">KPI Setting</span><span class="chip">Attendance &amp; Leave</span><span class="chip">Employee Relations</span><span class="chip">HR Policy Compliance</span><span class="chip">Vendor Coordination</span><span class="chip">Procurement &amp; Inventory</span></div>
           </article>
-
-          <article class="card" data-reveal style="--delay:.12s">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12h4l2-5 3.5 10 2.5-7 1.5 2h5.5"/></svg></div>
+          <article class="card">
+            <div class="card-top"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12h4l2-5 3.5 10 2.5-7 1.5 2h5.5"/></svg></span><span class="card-index">iii.</span></div>
             <h3>US Healthcare RCM</h3>
             <p>Selling revenue cycle services to US providers, and understanding the denials, reimbursements and credentialing issues behind each deal.</p>
-            <div class="chips">
-              <span class="chip">Revenue Cycle Management</span><span class="chip">Medical Billing</span><span class="chip">Insurance Credentialing</span><span class="chip">Provider Relations</span><span class="chip">US Healthcare Sales</span><span class="chip">Virtual Medical Assistants</span>
-            </div>
+            <div class="chips"><span class="chip">Revenue Cycle Management</span><span class="chip">Medical Billing</span><span class="chip">Insurance Credentialing</span><span class="chip">Provider Relations</span><span class="chip">US Healthcare Sales</span><span class="chip">Virtual Medical Assistants</span></div>
           </article>
-
-          <article class="card wide" data-reveal>
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></div>
+          <article class="card wide">
+            <div class="card-top"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></span><span class="card-index">iv.</span></div>
             <h3>Leadership</h3>
             <p>Running the daily sales floor, coaching reps through call reviews and one-on-ones, and reporting and forecasting for senior management.</p>
-            <div class="chips">
-              <span class="chip">Team Leadership</span><span class="chip">Sales Coaching</span><span class="chip">Sales Floor Management</span><span class="chip">Performance Management</span><span class="chip">Reporting &amp; Forecasting</span><span class="chip">Cross-Functional Collaboration</span>
-            </div>
+            <div class="chips"><span class="chip">Team Leadership</span><span class="chip">Sales Coaching</span><span class="chip">Sales Floor Management</span><span class="chip">Performance Management</span><span class="chip">Reporting &amp; Forecasting</span><span class="chip">Cross-Functional Collaboration</span></div>
           </article>
-
-          <article class="card wide" data-reveal style="--delay:.06s">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v4a1 1 0 0 0 1 1h2l5 4V5L7 9H5a1 1 0 0 0-1 1Z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg></div>
+          <article class="card wide">
+            <div class="card-top"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v4a1 1 0 0 0 1 1h2l5 4V5L7 9H5a1 1 0 0 0-1 1Z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg></span><span class="card-index">v.</span></div>
             <h3>Digital Marketing</h3>
             <p>Social media and outreach campaigns, sales and marketing content, and simple pipelines for businesses that had no structured process.</p>
-            <div class="chips">
-              <span class="chip">Social Media Marketing</span><span class="chip">Content Creation</span><span class="chip">Outreach Campaigns</span><span class="chip">Influencer Marketing</span><span class="chip">E-Commerce</span>
-            </div>
+            <div class="chips"><span class="chip">Social Media Marketing</span><span class="chip">Content Creation</span><span class="chip">Outreach Campaigns</span><span class="chip">Influencer Marketing</span><span class="chip">E-Commerce</span></div>
           </article>
         </div>
       </div>
@@ -280,7 +224,6 @@
           <p class="label rule">Approach</p>
           <h2 class="section-title" id="method-title">Two cycles, run end to end</h2>
           <p class="section-intro">The sales cycle that brings practices in, and the people cycle that builds the team to serve them. I own both, and each one is built around what the client or the hire actually needs.</p>
-
           <div class="tabs" role="tablist" aria-label="Process">
             <button class="tab" role="tab" id="tab-sales" aria-selected="true" aria-controls="panel-sales">Sales cycle</button>
             <button class="tab" role="tab" id="tab-people" aria-selected="false" aria-controls="panel-people" tabindex="-1">People cycle</button>
@@ -296,7 +239,6 @@
             <li class="step"><span class="step-num">05</span><h3>Negotiation &amp; contract</h3><p>Handle presentations, objections and pricing negotiation through to a signed contract.</p></li>
             <li class="step"><span class="step-num">06</span><h3>Handover &amp; retention</h3><p>Hand new clients to the billing and credentialing teams, stay the main contact for key accounts, keep retention high with regular check-ins, and spot add-on service opportunities.</p></li>
           </ol>
-
           <ol class="steps" id="panel-people" role="tabpanel" aria-labelledby="tab-people" hidden>
             <li class="step"><span class="step-num">01</span><h3>Define the role</h3><p>Write clear job descriptions for the business development team, built around what the role really has to deliver.</p></li>
             <li class="step"><span class="step-num">02</span><h3>Source &amp; shortlist</h3><p>Source candidates through channels such as LinkedIn Recruiter, Rozee.pk and Indeed, and shortlist the strongest fits.</p></li>
@@ -325,32 +267,20 @@
             <p class="label">Services I sell</p>
             <h3>Revenue services that keep a practice paid on time.</h3>
             <ul class="service-list">
-              <li>Revenue Cycle Management <span>01</span></li>
-              <li>Medical Billing <span>02</span></li>
-              <li>Insurance Credentialing <span>03</span></li>
-              <li>Virtual Medical Assistants <span>04</span></li>
+              <li>Revenue Cycle Management <span>i.</span></li>
+              <li>Medical Billing <span>ii.</span></li>
+              <li>Insurance Credentialing <span>iii.</span></li>
+              <li>Virtual Medical Assistants <span>iv.</span></li>
             </ul>
           </div>
-
-          <div class="panel panel-clients" data-reveal style="--delay:.06s">
+          <div class="panel panel-clients" data-reveal style="--delay:.08s">
             <p class="label">Who I work with</p>
-            <ul class="client-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg>Physicians</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg>Psychiatrists</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg>Nurse Practitioners</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg>Group Practices</li>
-            </ul>
+            <ul class="plain-list"><li>Physicians</li><li>Psychiatrists</li><li>Nurse Practitioners</li><li>Group Practices</li></ul>
           </div>
-
-          <div class="panel panel-problems" data-reveal style="--delay:.12s">
+          <div class="panel panel-problems" data-reveal style="--delay:.16s">
             <p class="label">Problems I solve</p>
-            <ul class="check-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.6 2.5L16 9.5"/></svg>Claim denials</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.6 2.5L16 9.5"/></svg>Slow reimbursements</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.6 2.5L16 9.5"/></svg>Credentialing delays</li>
-            </ul>
+            <ul class="plain-list"><li>Claim denials</li><li>Slow reimbursements</li><li>Credentialing delays</li></ul>
           </div>
-
           <div class="panel panel-pricing" data-reveal>
             <div>
               <p class="label">How proposals are priced</p>
@@ -380,15 +310,12 @@
         </div>
 
         <div class="timeline" data-reveal>
-          <div class="role current">
-            <div class="role-card">
+          <div class="role">
+            <div class="role-date">June 2024 – Present</div>
+            <div>
               <button class="role-head" aria-expanded="true" aria-controls="role-1">
-                <span>
-                  <span class="role-date">June 2024 – Present</span>
-                  <span class="role-title">Senior Manager – Business Development, HR &amp; Administration</span>
-                  <span class="role-company">Prime Medical Billing LLC</span>
-                </span>
-                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg></span>
+                <span><span class="role-title">Senior Manager – Business Development, HR &amp; Administration</span><span class="role-company">Prime Medical Billing LLC</span></span>
+                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></span>
               </button>
               <div class="role-body" id="role-1"><div><div class="role-content">
                 <ul class="role-points">
@@ -407,14 +334,11 @@
           </div>
 
           <div class="role">
-            <div class="role-card">
+            <div class="role-date">April 2022 – May 2024</div>
+            <div>
               <button class="role-head" aria-expanded="false" aria-controls="role-2">
-                <span>
-                  <span class="role-date">April 2022 – May 2024</span>
-                  <span class="role-title">Business Development Manager</span>
-                  <span class="role-company">Pure Medical Billing Solutions</span>
-                </span>
-                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg></span>
+                <span><span class="role-title">Business Development Manager</span><span class="role-company">Pure Medical Billing Solutions</span></span>
+                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></span>
               </button>
               <div class="role-body" id="role-2"><div><div class="role-content">
                 <ul class="role-points">
@@ -431,15 +355,12 @@
             </div>
           </div>
 
-          <div class="role current">
-            <div class="role-card">
+          <div class="role">
+            <div class="role-date">March 2022 – Present<small>Part-time</small></div>
+            <div>
               <button class="role-head" aria-expanded="false" aria-controls="role-3">
-                <span>
-                  <span class="role-date">March 2022 – Present · Part-time</span>
-                  <span class="role-title">Business Development Consultant (Freelance)</span>
-                  <span class="role-company">Self-employed</span>
-                </span>
-                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg></span>
+                <span><span class="role-title">Business Development Consultant</span><span class="role-company">Self-employed · Freelance</span></span>
+                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></span>
               </button>
               <div class="role-body" id="role-3"><div><div class="role-content">
                 <ul class="role-points">
@@ -454,14 +375,11 @@
           </div>
 
           <div class="role">
-            <div class="role-card">
+            <div class="role-date">Nov 2021 – Feb 2022</div>
+            <div>
               <button class="role-head" aria-expanded="false" aria-controls="role-4">
-                <span>
-                  <span class="role-date">November 2021 – February 2022</span>
-                  <span class="role-title">Quality Control Officer</span>
-                  <span class="role-company">VTT Global, KPK Education Department Project</span>
-                </span>
-                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg></span>
+                <span><span class="role-title">Quality Control Officer</span><span class="role-company">VTT Global, KPK Education Department Project</span></span>
+                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></span>
               </button>
               <div class="role-body" id="role-4"><div><div class="role-content">
                 <ul class="role-points">
@@ -475,14 +393,11 @@
           </div>
 
           <div class="role">
-            <div class="role-card">
+            <div class="role-date">April 2017 – Nov 2021</div>
+            <div>
               <button class="role-head" aria-expanded="false" aria-controls="role-5">
-                <span>
-                  <span class="role-date">April 2017 – November 2021</span>
-                  <span class="role-title">Supervisor – Finance &amp; Site Operations</span>
-                  <span class="role-company">Waqas Enterprises</span>
-                </span>
-                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg></span>
+                <span><span class="role-title">Supervisor – Finance &amp; Site Operations</span><span class="role-company">Waqas Enterprises</span></span>
+                <span class="role-toggle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></span>
               </button>
               <div class="role-body" id="role-5"><div><div class="role-content">
                 <ul class="role-points">
@@ -509,28 +424,11 @@
           </div>
           <p class="section-intro" data-reveal>The systems I use every day to run pipelines, people operations and the office.</p>
         </div>
-
-        <div class="toolkit">
-          <div class="tool-group" data-reveal>
-            <p class="label">Sales</p>
-            <h3>CRM &amp; pipeline</h3>
-            <ul><li>HubSpot CRM</li><li>LinkedIn Recruiter</li><li>Trello</li><li>Asana</li></ul>
-          </div>
-          <div class="tool-group" data-reveal style="--delay:.06s">
-            <p class="label">People</p>
-            <h3>HR systems</h3>
-            <ul><li>BambooHR</li><li>Zoho People</li><li>Odoo HR</li><li>QuickBooks Payroll</li><li>ZKTeco Biometric Attendance</li></ul>
-          </div>
-          <div class="tool-group" data-reveal style="--delay:.12s">
-            <p class="label">Talent</p>
-            <h3>Hiring channels</h3>
-            <ul><li>LinkedIn Recruiter</li><li>Rozee.pk</li><li>Indeed</li></ul>
-          </div>
-          <div class="tool-group" data-reveal style="--delay:.18s">
-            <p class="label">Workplace</p>
-            <h3>Productivity</h3>
-            <ul><li>Microsoft 365</li><li>Excel, Word, PowerPoint</li><li>Outlook, Teams</li><li>Google Workspace</li><li>Slack</li></ul>
-          </div>
+        <div class="toolkit" data-reveal>
+          <div class="tool-group"><p class="label">Sales</p><h3>CRM &amp; pipeline</h3><ul><li>HubSpot CRM</li><li>LinkedIn Recruiter</li><li>Trello</li><li>Asana</li></ul></div>
+          <div class="tool-group"><p class="label">People</p><h3>HR systems</h3><ul><li>BambooHR</li><li>Zoho People</li><li>Odoo HR</li><li>QuickBooks Payroll</li><li>ZKTeco Biometric Attendance</li></ul></div>
+          <div class="tool-group"><p class="label">Talent</p><h3>Hiring channels</h3><ul><li>LinkedIn Recruiter</li><li>Rozee.pk</li><li>Indeed</li></ul></div>
+          <div class="tool-group"><p class="label">Workplace</p><h3>Productivity</h3><ul><li>Microsoft 365</li><li>Excel, Word, PowerPoint</li><li>Outlook, Teams</li><li>Google Workspace</li><li>Slack</li></ul></div>
         </div>
       </div>
     </section>
@@ -544,52 +442,46 @@
             <h2 class="section-title" id="credentials-title">Education &amp; certifications</h2>
           </div>
         </div>
-
         <div class="creds">
           <article class="cred" data-reveal>
-            <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg></div>
-            <div><h3>Bachelor of Business Administration (Hons)</h3><p>Hazara University, Mansehra · 2017</p></div>
+            <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg>
+            <h3>Bachelor of Business Administration (Hons)</h3><p>Hazara University, Mansehra · 2017</p>
           </article>
-          <article class="cred" data-reveal style="--delay:.06s">
-            <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg></div>
-            <div><h3>Google Digital Marketing &amp; E-commerce</h3><p>Professional Certificate</p></div>
+          <article class="cred" data-reveal style="--delay:.08s">
+            <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg>
+            <h3>Google Digital Marketing &amp; E-commerce</h3><p>Professional Certificate</p>
           </article>
-          <article class="cred" data-reveal style="--delay:.12s">
-            <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg></div>
-            <div><h3>Social Media Marketing</h3><p>Certification</p></div>
+          <article class="cred" data-reveal style="--delay:.16s">
+            <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg>
+            <h3>Social Media Marketing</h3><p>Certification</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ============ CONTACT ============ -->
-    <section class="section" id="contact" aria-labelledby="contact-title" style="padding-top:0">
-      <div class="container">
-        <div class="contact-card" data-reveal>
-          <div>
-            <p class="label rule">Contact</p>
-            <h2 class="contact-title" id="contact-title">Let’s work together.</h2>
-            <p class="contact-lede">Whether you’re a US practice looking for a revenue cycle partner, a company that needs its sales and people operations built properly, or a business that wants more customers, I’d be glad to hear from you.</p>
-            <div class="contact-actions">
-              <a class="btn btn-light js-mail" href="#contact">Send an email</a>
-              <a class="btn btn-ghost-light" href="Mansoor-Mehmood-Resume.pdf" download>Download résumé</a>
-            </div>
+    <section class="section contact alt" id="contact" aria-labelledby="contact-title">
+      <div class="container" data-reveal>
+        <p class="label rule">Contact</p>
+        <h2 class="contact-title" id="contact-title">Let’s work <em>together.</em></h2>
+        <p class="contact-lede">Whether you’re a US practice looking for a revenue cycle partner, a company that needs its sales and people operations built properly, or a business that wants more customers, I’d be glad to hear from you.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary js-mail" href="#contact">Send an email</a>
+          <a class="btn btn-outline" href="Mansoor-Mehmood-Resume.pdf" download>Download résumé</a>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <small>Email</small>
+            <b><a class="js-mail js-mail-text" href="#contact">mansoormehmood65 [at] gmail.com</a></b>
+            <button class="copy-btn" type="button">Copy</button>
           </div>
-
-          <div class="contact-list">
-            <div class="contact-item">
-              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg></span>
-              <span><small>Email</small><b><a class="js-mail js-mail-text" href="#contact">mansoormehmood65 [at] gmail.com</a></b></span>
-              <button class="copy-btn" type="button">Copy</button>
-            </div>
-            <a class="contact-item" href="https://www.linkedin.com/in/mansoormehmood" target="_blank" rel="noopener">
-              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.77 2.55 4.77 5.86v5.59h-4v-4.96c0-1.18-.02-2.7-1.7-2.7-1.7 0-1.96 1.28-1.96 2.61v5.05h-4v-11Z"/></svg></span>
-              <span><small>LinkedIn</small><b>linkedin.com/in/mansoormehmood</b></span>
-            </a>
-            <div class="contact-item">
-              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-              <span><small>Location</small><b>Islamabad, Pakistan</b></span>
-            </div>
+          <a class="contact-item" href="https://www.linkedin.com/in/mansoormehmood" target="_blank" rel="noopener">
+            <small>LinkedIn</small>
+            <b>in/mansoormehmood</b>
+          </a>
+          <div class="contact-item">
+            <small>Location</small>
+            <b>Islamabad, Pakistan</b>
           </div>
         </div>
       </div>
@@ -598,12 +490,13 @@
 
   <footer class="footer">
     <div class="container"><div class="footer-inner">
-      <span><span class="footer-brand">Mansoor Mehmood</span> &nbsp;·&nbsp; © <span class="year">2026</span></span>
+      <span><span class="footer-brand">Mansoor Mehmood</span></span>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/mansoormehmood" target="_blank" rel="noopener">LinkedIn</a>
         <a href="Mansoor-Mehmood-Resume.pdf" download>Résumé</a>
         <a href="#top">Back to top ↑</a>
       </div>
+      <span>© <span class="year">2026</span> · Islamabad</span>
     </div></div>
   </footer>
 
